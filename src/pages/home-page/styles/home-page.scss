@@ -1,0 +1,193 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+@import "/src/global-styles/styles/root.scss";
+
+
+
+body{
+  background-color: var(--background-color);
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+.home-page-container {
+  display: flex;
+  flex-wrap: nowrap;
+  color: var(--color-secondary);
+  margin: 4em;
+  gap: 8vw;
+
+
+  .aiGoals {
+    max-width: 467px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+
+    &__header {
+      margin: 0;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.002em;
+    }
+
+    &__header-box {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+    }
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__aiBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 23px 30.5px 0;        
+      max-width: 268px;
+      background-color: var(--boxes-color);
+      border-radius: var(--radius-desktop);
+    }
+
+    &__box-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-top: 12px;
+    }
+
+    &__content-box {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5em;
+      opacity: 0.5;
+      margin: 16px 16px 24px;
+    }
+
+    &__image {
+      max-width: 64px;
+      margin-top: 24px;
+      
+      img {
+        border-radius: var(--radius-mobile);
+        padding: 16px;
+        max-width: 32px;
+      }
+      #machine {
+        background-color: var(--machine-img-bgcolor);
+      }
+      #vr {
+        background-color: var(--vr-img-bgcolor);
+      }
+      #natural {
+        background-color: var(--natural-img-bgcolor);
+      }
+      #robotics {
+        background-color: var(--robotics-img-bgcolor);
+      }
+    }
+  }
+
+  @media screen and (max-width: 834px ){
+
+   
+    margin: 5em auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 496px;
+    gap: 24px;
+    
+    .aiGoals {
+      gap: 1px;
+      max-width: 496px;
+
+      &__header-box {
+        margin-bottom: 0px;
+      }
+    }
+
+    .boxes {
+      gap: 16px;
+      
+      &__aiBox {
+        margin: 0;
+        max-width: 240px;
+        border-radius: 20px;
+      }
+
+      &__image {
+        margin-top: 20px;
+        margin-right: 6px;
+        max-width: 56px;
+        border-radius: 14px;
+        
+
+        img {
+          max-width: 28px;
+          padding: 14px;
+        }
+      }
+
+      &__box-title {
+        margin-right: 5px;
+        margin-top: 11.5px;
+      }
+      
+      &__content-box {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 16px 17px 20px 14px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    max-width: 343px;
+    margin: auto 7px ;
+
+    .aiGoals{
+
+      &__header {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: left;
+      }
+
+      &__header-box {
+        text-align: left;
+      }
+    }
+
+    .boxes {
+      width: 100%;
+      gap: 16px;
+      
+      &__aiBox {
+        min-width: 100%;
+        padding-left: 2px;
+        height: auto;
+        
+      }
+
+
+      &__content-box {
+        max-width: 303px;
+        margin: 16px 21px 20px auto;
+      }
+      
+      .extra-margin{
+        margin-left: 14px;
+      }
+    }
+  }
+}
+
