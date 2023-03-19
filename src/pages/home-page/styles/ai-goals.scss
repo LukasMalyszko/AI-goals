@@ -1,16 +1,11 @@
-
-
 .ai-goals {
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex: 1 ;
     max-width: 29.2em;
-    //min-width: 10%;
-    gap: 0.6em;
-
-    &__header {
+    gap: 24px;
+    
+    & &__header {
       margin: 0;
       font-weight: 500;
       font-size: 48px;
@@ -18,35 +13,29 @@
       letter-spacing: -0.002em;
     }
 
-    &__header-box {
+    & &__header-box {
+      margin: 0;
       font-size: 16px;
       font-weight: 400;
       line-height: 24px;
       text-align: left;
     }
 
-    @media screen and (max-width: 834px ){
-        
-            gap: 1px;
-            max-width: 496px;
+    @media screen and (max-width: 1205px ){
+      gap: 16px;
+      max-width: 496px;
       
-            &__header-box {
-              margin-bottom: 0px;
-            }
+       & &__header-box {
+        margin: 0;
+      }
     }
-
-    @media screen and (max-width: 375px ){
-
-            &__header {
-                margin-bottom: 0.2em;
-              font-size: 32px;
-              line-height: 40px;
-              text-align: left;
-            }
-      
-            &__header-box {
-                margin-top: 0.5em;
-                text-align: left;
-            }
+    
+    @media screen and (max-width: 565px){
+      & &__header {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: left;
+      }
     }
   }
+  
