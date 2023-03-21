@@ -1,5 +1,4 @@
-.boxes {
-    //border: 1px solid red;
+.component-boxes {
 
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +13,7 @@
       align-items: center;
       text-align: center;
       max-width: 16.7em;
-      background-color: var(--boxes-color);
+      background-color: var(--boxes-bg-gray-color);
       border-radius: var(--radius-desktop);
     }
 
@@ -40,18 +39,7 @@
         border-radius: var(--radius-mobile);
         padding: 16px;
         max-width: 32px;
-      }
-      #machine {
-        background-color: var(--machine-img-bgcolor);
-      }
-      #vr {
-        background-color: var(--vr-img-bgcolor);
-      }
-      #natural {
-        background-color: var(--natural-img-bgcolor);
-      }
-      #robotics {
-        background-color: var(--robotics-img-bgcolor);
+        background-color: var(--img-bgcolor);
       }
     }
 
