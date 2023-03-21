@@ -5,16 +5,16 @@
 @import "/src/pages/home-page/styles/boxes.scss";
 
 body{
-  background-color: var(--background-color);
+  background-color: var(--bg-dark-blue-color);
   font-family: 'DM Sans', sans-serif;
 }
 
-.home-page-container {
+.component-home-page-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: var(--color-secondary);
-  margin: 9% 35px ;
+  color: var(--color-white);
+  margin: 200px auto ;
   gap: 109px;
   max-width: 1400px;
   
@@ -26,7 +26,7 @@ body{
 
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 565px) {
 
     margin: 15% 16px 25%;
   }
